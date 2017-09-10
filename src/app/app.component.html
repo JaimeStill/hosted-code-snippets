@@ -14,17 +14,53 @@
   <div class="app-body mat-app-background" fxFlex fxFill>
     <md-toolbar>Overview</md-toolbar>
     <p class="body-2">
-      This project demonstrates using an Angular Component to render source files from hosted sites like GitHub. This is accomplished by retrieving the <code>raw.githubusercontent.com</code> value of a source file using HTTP.
+      This project demonstrates using an Angular Component to render source files from hosted sites like GitHub. This is accomplished by retrieving the <code class="snippet">raw.githubusercontent.com</code> source file using HTTP.
     </p>
+    <md-toolbar>Hosted Snippet Attributes</md-toolbar>
+    <md-list>
+      <md-list-item>
+        <h4 md-line><code class="snippet">file</code></h4>
+        <p md-line>Name of the file to show in the snippet header</p>
+      </md-list-item>
+      <md-list-item>
+        <h4 md-line><code class="snippet">language</code></h4>
+        <p md-line>Language the source file is written in</p>
+      </md-list-item>
+      <md-list-item>
+          <h4 md-line><code class="snippet">maxHeight</code></h4>
+        <p md-line>Max height the code container should render before enabling scrolling. Default is 100%.</p>
+      </md-list-item>
+      <md-list-item>
+          <h4 md-line><code class="snippet">url</code></h4>
+        <p md-line>Fully qualified location of the raw source</p>
+      </md-list-item>
+    </md-list>
+    <h3>Example</h3>
+    <section class="snippet-container">
+      <code class="snippet">&lt;hosted-snippet file="package.json" language="json" maxHeight="500px"
+        url="https://raw.githubusercontent.com/JaimeStill/hosted-code-snippets/master/package.json"&gt;&lt;/hosted-snippet&gt;</code>
+    </section>
+    <md-toolbar>App Configuration</md-toolbar>
     <hosted-snippet file="package.json" language="json" maxHeight="500px"
                     url="https://raw.githubusercontent.com/JaimeStill/hosted-code-snippets/master/package.json"></hosted-snippet>
+    <hosted-snippet file="main.ts" language="typescript" maxHeight="500px"
+                    url="https://raw.githubusercontent.com/JaimeStill/hosted-code-snippets/master/src/main.ts"></hosted-snippet>
+    <hosted-snippet file="app.module.ts" language="typescript" maxHeight="500px"
+                    url="https://raw.githubusercontent.com/JaimeStill/hosted-code-snippets/master/src/app/app.module.ts"></hosted-snippet>
+    <md-toolbar>Prism Theme</md-toolbar>
     <hosted-snippet file="material-prism.scss" language="sass" maxHeight="500px"
                     url="https://raw.githubusercontent.com/JaimeStill/hosted-code-snippets/master/src/material-prism.scss"></hosted-snippet>
+    <md-toolbar>Source</md-toolbar>
     <hosted-snippet file="snippet.service.ts" language="typescript" maxHeight="500px"
                     url="https://raw.githubusercontent.com/JaimeStill/hosted-code-snippets/master/src/app/services/snippet.service.ts"></hosted-snippet>
     <hosted-snippet file="hosted-snippet.component.ts" language="typescript" maxHeight="500px"
                     url="https://raw.githubusercontent.com/JaimeStill/hosted-code-snippets/master/src/app/components/hosted-snippet/hosted-snippet.component.ts"></hosted-snippet>
     <hosted-snippet file="hosted-snippet.component.html" language="markup" maxHeight="500px"
                     url="https://raw.githubusercontent.com/JaimeStill/hosted-code-snippets/master/src/app/components/hosted-snippet/hosted-snippet.component.html"></hosted-snippet>
+    <hosted-snippet file="hosted-snippet.component.scss" language="sass" maxHeight="500px"
+                    url="https://raw.githubusercontent.com/JaimeStill/hosted-code-snippets/master/src/app/components/hosted-snippet/hosted-snippet.component.scss"></hosted-snippet>
+    <md-toolbar>Example</md-toolbar>    
+    <hosted-snippet file="app.component.html" language="markup" maxHeight="500px"
+                    url="https://raw.githubusercontent.com/JaimeStill/hosted-code-snippets/master/src/app/app.component.html"></hosted-snippet>
   </div>
 </div>

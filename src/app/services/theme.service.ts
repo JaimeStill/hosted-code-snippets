@@ -15,8 +15,8 @@ export class ThemeService {
         ];
 
         this.themes = new BehaviorSubject<Array<Theme>>(themes);
-        this.active = themes[0];
-        this.overlay.themeClass = themes[0].theme;
+        this.active = themes[1];
+        this.overlay.themeClass = themes[1].theme;
     }
 
     setTheme(theme: Theme) {

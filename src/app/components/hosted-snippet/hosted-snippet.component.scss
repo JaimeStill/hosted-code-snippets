@@ -1,7 +1,7 @@
 .code-container {
     background-color: #1E1E1E;
-    padding: 8px 4px;
     overflow: auto;
+    margin: 0;
 }
 
 .code-container code {
@@ -10,4 +10,8 @@
 
 .file-header {
     margin-left: 15px;
+}
+
+md-toolbar.mat-toolbar {
+    margin: 0;
 }

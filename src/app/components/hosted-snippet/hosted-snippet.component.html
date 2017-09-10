@@ -1,5 +1,7 @@
 <md-toolbar>
-    <button md-icon-button (click)="toggleSnippet()"><md-icon>code</md-icon></button>
+    <button md-button color="primary" (click)="toggleSnippet()">
+        <md-icon>code</md-icon> <span *ngIf="show">Hide</span><span *ngIf="!show">Show</span>
+    </button>
     <span class="file-header">{{file}}</span>
 </md-toolbar>
 <md-progress-bar color="accent" mode="indeterminate" *ngIf="!source"></md-progress-bar>
