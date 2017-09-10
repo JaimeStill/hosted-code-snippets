@@ -1,4 +1,8 @@
+<md-toolbar>
+    <button md-icon-button (click)="toggleSnippet()"><md-icon>code</md-icon></button>
+    <span class="file-header">{{file}}</span>
+</md-toolbar>
 <md-progress-bar color="accent" mode="indeterminate" *ngIf="!source"></md-progress-bar>
-<section *ngIf="source">
+<section *ngIf="source" class="code-container" [@slide]="show" [style.max-height]="maxHeight">
     <pre><code [innerHtml]="source" class="block block-{{language}}"></code></pre>
 </section>

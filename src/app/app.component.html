@@ -12,9 +12,19 @@
     </md-menu>
   </md-toolbar>
   <div class="app-body mat-app-background" fxFlex fxFill>
-    <md-toolbar>Examples</md-toolbar>
-    <p>
-      The below examples demonstrate using a component to render code snippets from a hosted site like GitHub.
+    <md-toolbar>Overview</md-toolbar>
+    <p class="body-2">
+      This project demonstrates using an Angular Component to render source files from hosted sites like GitHub. This is accomplished by retrieving the <code>raw.githubusercontent.com</code> value of a source file using HTTP.
     </p>
+    <hosted-snippet file="package.json" language="json" maxHeight="500px"
+                    url="https://raw.githubusercontent.com/JaimeStill/hosted-code-snippets/master/package.json"></hosted-snippet>
+    <hosted-snippet file="material-prism.scss" language="sass" maxHeight="500px"
+                    url="https://raw.githubusercontent.com/JaimeStill/hosted-code-snippets/master/src/material-prism.scss"></hosted-snippet>
+    <hosted-snippet file="snippet.service.ts" language="typescript" maxHeight="500px"
+                    url="https://raw.githubusercontent.com/JaimeStill/hosted-code-snippets/master/src/app/services/snippet.service.ts"></hosted-snippet>
+    <hosted-snippet file="hosted-snippet.component.ts" language="typescript" maxHeight="500px"
+                    url="https://raw.githubusercontent.com/JaimeStill/hosted-code-snippets/master/src/app/components/hosted-snippet/hosted-snippet.component.ts"></hosted-snippet>
+    <hosted-snippet file="hosted-snippet.component.html" language="markup" maxHeight="500px"
+                    url="https://raw.githubusercontent.com/JaimeStill/hosted-code-snippets/master/src/app/components/hosted-snippet/hosted-snippet.component.html"></hosted-snippet>
   </div>
 </div>
