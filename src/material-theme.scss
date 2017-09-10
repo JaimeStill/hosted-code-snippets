@@ -2,25 +2,32 @@
 @import '~@angular/material/_theming.scss';
 @include mat-core();
 
-$green: mat-palette($mat-green, A400);
-$light-blue: mat-palette($mat-light-blue, A400);
+$dark-p: mat-palette($mat-green, A400);
+$dark-a: mat-palette($mat-light-blue, A400);
+
+$light-p: mat-palette($mat-blue, 600);
+$light-a: mat-palette($mat-indigo, 500);
 
 $default-theme: mat-light-theme(mat-palette($mat-green, A400), mat-palette($mat-light-blue, A400));
 @include angular-material-theme($default-theme);
 
-.snippet {
-    color: map-get($mat-light-blue, A400);
-}
-
-.green-light {
-    $default-theme: mat-light-theme(mat-palette($mat-green, A400), mat-palette($mat-light-blue, A400));
+.light {
+    $default-theme: mat-light-theme($light-p, $light-a);
     @include angular-material-theme($default-theme);
 }
 
-.green-dark {
+.light .snippet {
+    color: map-get($mat-indigo, 500)
+}
+
+.dark {
     color: #e1e1e1;
-    $default-theme: mat-dark-theme($green, $light-blue);
+    $default-theme: mat-dark-theme($dark-p, $dark-a);
     @include angular-material-theme($default-theme);
+}
+
+.dark .snippet {
+    color: map-get($mat-light-blue, A400)
 }
 
 div.cdk-overlay-container {

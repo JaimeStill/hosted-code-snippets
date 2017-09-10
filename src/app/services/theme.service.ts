@@ -10,8 +10,8 @@ export class ThemeService {
 
     constructor(public overlay: OverlayContainer) {
         const themes: Array<Theme> = [
-            new Theme('green-light', 'Light Theme'),
-            new Theme('green-dark', 'Dark Theme')
+            new Theme('light', 'Light Theme'),
+            new Theme('dark', 'Dark Theme')
         ];
 
         this.themes = new BehaviorSubject<Array<Theme>>(themes);
