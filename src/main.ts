@@ -4,6 +4,12 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
+import 'hammerjs';
+import 'prismjs/prism';
+import 'prismjs/components/prism-markup';
+import 'prismjs/components/prism-typescript';
+import 'prismjs/components/prism-sass';
+
 if (environment.production) {
   enableProdMode();
 }

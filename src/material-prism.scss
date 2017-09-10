@@ -2,18 +2,12 @@ code {
     font-family: Consolas, "Lucida Console", Monaco, monospace;
 }
 
-prism {
+hosted-snippet {
     background-color: #1E1E1E;
     display: flex;
     color: #D4D4D4;
     box-sizing: border;
     padding: 24px;
-    margin: 0;
-}
-
-prism.card-snippet {
-    display: block;
-    padding: 10px 24px;
     margin: 0;
 }
 
@@ -148,7 +142,7 @@ code[class*="language-"] ::selection {
 }
 
 .token.function {
-    color: #DCDCAA;
+    color: #dcdcaa;
 }
 
 .token.important,
@@ -164,7 +158,7 @@ code[class*="language-"] ::selection {
     cursor: help;
 }
 
-prism pre,
-prism pre code {
+.dark pre,
+.dark pre code {
     background-color: #1E1E1E;
 }

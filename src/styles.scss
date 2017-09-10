@@ -1,1 +1,26 @@
 @import 'material-theme.scss';
+
+html, body, app, .app-frame {
+    overflow: hidden;
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.app-body {
+    height: 100%;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.mat-typography h1,
+.mat-typography h2,
+.mat-typography h3,
+.mat-typography h4,
+.mat-typography h5,
+.mat-typography h6,
+.mat-typography p {
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
