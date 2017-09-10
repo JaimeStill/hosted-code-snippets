@@ -1,0 +1,21 @@
+@import 'material-toaster.scss';
+@import 'material-prism.scss';
+
+$green: mat-palette($mat-green, A400);
+$light-blue: mat-palette($mat-light-blue, A400);
+
+.green-light {
+    $default-theme: mat-light-theme(mat-palette($mat-green, A400), mat-palette($mat-light-blue, A400));
+    @include angular-material-theme($default-theme);
+}
+
+.green-dark {
+    color: #e1e1e1;
+    $default-theme: mat-dark-theme($green, $light-blue);
+    @include angular-material-theme($default-theme);
+}
+
+div.cdk-overlay-container {
+    background-color: transparent;
+    z-index: 9999;
+}
