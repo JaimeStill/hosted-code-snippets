@@ -1,0 +1,93 @@
+.dark .token.comment {
+    color: #608b4e;
+}
+
+.dark .token.class-name {
+    color: #4bc9b0;
+}
+
+.dark .token.number {
+    color: #b5cea8;
+}
+
+.dark .token.regex {
+    color: #d16969;
+}
+
+.dark .token.tag {
+    color: #569cd6;
+}
+
+.dark .token.selector {
+    color: #d7ba7d;
+}
+
+.dark .token.inserted {
+    color: #b5cea8;
+}
+
+.dark .token.deleted {
+    color: #ce9178;
+}
+
+.dark .token.punctuation {
+    color: #808080;
+}
+
+.dark .token.string,
+.dark .language-css .token.string,
+.dark .style .token.string,
+.dark .token.attr-value {
+    color: #ce9178;
+}
+
+.dark .token.attr-name,
+.dark .token.char,
+.dark .token.builtin,
+.dark .token.property,
+.dark .token.variable,
+.dark .token.token.atrule,
+.dark .token.important {
+    color: #9cdcfe;
+}
+
+.dark .token.keyword,
+.dark .token.boolean,
+.dark .token.constant,
+.dark .token.symbol {
+    color: #569cd6;
+}
+
+.dark .token.operator,
+.dark .token.entity {
+    color: #d4d4d4;
+}
+
+.dark .token.prolog,
+.dark .token.doctype,
+.dark .token.cdata {
+    color: #608b4e;
+}
+
+.dark .token.url {
+    color: #a67f59;
+}
+
+.dark .token.function {
+    color: #dcdcaa;
+}
+
+.dark pre,
+.dark pre code {
+    background-color: #1e1e1e;
+}
+
+.dark .code-container {
+    background-color: #1E1E1E;
+    overflow: auto;
+    margin: 0;
+}
+
+.dark .code-container code {
+    color: #e1e1e1;
+}

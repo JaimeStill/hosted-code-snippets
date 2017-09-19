@@ -1,0 +1,93 @@
+.light .token.comment {
+    color: #008000;
+}
+
+.light .token.class-name {
+    color: #267f99;
+}
+
+.light .token.number {
+    color: #09885a;
+}
+
+.light .token.regex {
+    color: #811f3f;
+}
+
+.light .token.tag {
+    color: #800000;
+}
+
+.light .token.selector {
+    color: #800000;
+}
+
+.light .token.inserted {
+    color: #09885a;
+}
+
+.light .token.deleted {
+    color: #a31515;
+}
+
+.light .token.punctuation {
+    color: #000000;
+}
+
+.light .token.string,
+.light .language-css .token.string,
+.light .style .token.string,
+.light .token.attr-value {
+    color: #a31515;
+}
+
+.light .token.attr-name,
+.light .token.char,
+.light .token.builtin,
+.light .token.property,
+.light .token.variable,
+.light .token.token.atrule,
+.light .token.important {
+    color: #ff0000;
+}
+
+.light .token.keyword,
+.light .token.boolean,
+.light .token.constant,
+.light .token.symbol {
+    color: #0000ff;
+}
+
+.light .token.operator,
+.light .token.entity {
+    color: #09885a;
+}
+
+.light .token.prolog,
+.light .token.doctype,
+.light .token.cdata {
+    color: #008000;
+}
+
+.light .token.url {
+    color: #0451a5;
+}
+
+.light .token.function {
+    color: #795e26;
+}
+
+.light pre,
+.light pre code {
+    background-color: #ffffffff;
+}
+
+.light .code-container {
+    background-color: #ffffffff;
+    overflow: auto;
+    margin: 0;
+}
+
+.light .code-container code {
+    color: #000000;
+}

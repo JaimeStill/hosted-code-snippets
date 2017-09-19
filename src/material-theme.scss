@@ -1,4 +1,6 @@
 @import 'material-prism.scss';
+@import 'material-prism-dark.scss';
+@import 'material-prism-light.scss';
 @import '~@angular/material/_theming.scss';
 @include mat-core();
 
